@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(./Resources/background.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.toolbar {
+      background:rgb(137, 249, 176);
+      border: none;
+      padding: 15px;
+      margin-bottom: 10px;
+      display: flex;
+    }
+
+
+
+#editor {
+      background:none;
+      border:none;
+      min-height: 300px;
+      padding: 10px;
+      outline: none;
+    }
+.tool{
+    width: 800px;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.pic{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+button{
+    background: none;
+    border: none;
+}
+input{
+    background: none;
+    height: 40px;
+    width: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}

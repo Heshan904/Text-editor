@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="./textEditor.css">
+</head>
+<body>
+<div class="tool">
+    <div class="toolbar">
+        <button onclick="execCmd('bold')"><img src="./Resources/bold.png" alt="" class="pic"></button>
+        <button onclick="execCmd('italic')"><img src="./Resources/italic.png" alt="" class="pic"></button>
+        <button onclick="execCmd('underline')"><img src="./Resources/underline.png" alt="" class="pic"></button>
+        <input type="color" onchange="execCmdWithArg('foreColor', this.value)" />
+        <button onclick="execCmd('justifyLeft')"><img src="./Resources/left.png" alt="" class="pic"></button>
+        <button onclick="execCmd('justifyCenter')"><img src="./Resources/center.png" alt="" class="pic"></button>
+        <button onclick="execCmd('justifyRight')"><img src="./Resources/right.png" alt="" class="pic"></button>
+        <button onclick="execCmd('justifyFull')"><img src="./Resources/justify.png" alt="" class="pic"></button>
+        <button onclick="execCmd('undo')"><img src="./Resources/undo.png" alt="" class="pic"></button>
+        <button onclick="execCmd('redo')"><img src="./Resources/redo.png" alt="" class="pic"></button>
+    </div>
+
+    <div id="editor" contenteditable="true" >
+        Start typing here...
+    </div>
+</div>
+  <script src="./textEditor.js"></script>
+
+</body>
+</html>
